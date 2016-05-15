@@ -27,7 +27,7 @@ function load_data() {
     $( "[value='" + localStorage.getItem("repeats") + "']" ).attr("checked", true).checkboxradio("refresh");
 }
 
-$(document).on("pagebeforeshow", "#form", function() {
+$(document).on("pagebeforeshow", "#add_goal", function() {
     load_data();
 });
 
